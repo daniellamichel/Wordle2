@@ -2,37 +2,51 @@
 
 Submitted by: **Daniella Michel**
 
-**Wordle** is an app that ... [TODO] 
+**Wordle 2** is an iOS Swift-based clone of the popular word puzzle game, with extra knobs you can tweak. Players attempt to guess a hidden word; after each full-row guess, the app provides visual feedback using colored tiles:
 
-Time spent: **10** hours spent in total
+- 🟩 **Green** — correct letter in the correct position  
+- 🟨 **Yellow** — correct letter, wrong position  
+- ⬛ **Gray** — letter not in the word
+
+This version lets you choose the **word length (4–7 letters)**, the **number of guesses**, and a **theme** for the goal word. There’s also **Alien Wordle** mode where the goal word changes after each full-row guess. The interface uses UIKit with custom `UICollectionViewCell`s; the game auto-submits a row once it’s filled (no Enter key), and includes a top-left **Reset** button that clears the board without changing current settings.
+
+Time spent: **15** hours in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [ ] User can change the number of letters per row (the length of the goal word)
-- [ ] User can change the numbers of rows on the board (how many guesses allowed)
-- [ ] User can select a new themed set to pull the goal word from
-- [ ] User can select "alien wordle", causing the goal word to change after each guess
-
+- [x] User can change the number of letters per row (the length of the goal word)
+- [x] User can change the numbers of rows on the board (how many guesses allowed)
+- [x] User can select a new themed set to pull the goal word from
+- [x] User can select "alien wordle", causing the goal word to change after each guess
 
 The following **optional** features are implemented:
 
-- [ ] App displays a reset button on the top left to reset the game (but make no changes to the settings)
+- [x] App displays a reset button on the top left to reset the game (but make no changes to the settings)
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [ ] *(Add any extras you build later!)*
 
 ## Video Walkthrough
 
-Here is a reminder on how to embed Loom videos on GitHub. Feel free to remove this reminder once you upload your README. 
+_Add a Loom (or GIF) walkthrough here._
 
-[Guide]](https://www.youtube.com/watch?v=GA92eKlYio4) .
+**Example:**
+- [Video Walkthrough](https://www.loom.com/share/bab1b3ea19224802912ab9e7368c87cf?sid=634c2269-114a-4d45-8e87-9da7317e8066)
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+- Initially saw “no colors” because the **goal word length** didn’t match the selected letters-per-row; fixed by ensuring the generated goal always matches `numItemsPerRow`.
+- Resolved settings lookups by using the settings dictionary keys in code where constants were unavailable.
+- Minor Git issues (divergent histories, README conflict) were resolved via a merge.
+
+## Technologies
+
+- Swift, UIKit, `UICollectionView`
+- Xcode 15+
+- iOS 16+
 
 ## License
 
