@@ -34,8 +34,7 @@ The following **additional** features are implemented:
 _Add a Loom (or GIF) walkthrough here._
 
 **Example:**
-- [Video Walkthrough](https://www.loom.com/share/bab1b3ea19224802912ab9e7368c87cf?sid=634c2269-114a-4d45-8e87-9da7317e8066)
-
+- [Video Walkthrough](https://www.loom.com/share/bab1b3ea19224802912ab9e7368c87cf?sid=33617ae2-3be3-4b5b-bda5-3bbd1280023b)
 ## Notes
 
 - Initially saw “no colors” because the **goal word length** didn’t match the selected letters-per-row; fixed by ensuring the generated goal always matches `numItemsPerRow`.
