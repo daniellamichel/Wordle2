@@ -31,8 +31,6 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-_Add a Loom (or GIF) walkthrough here._
-
 **Example:**
 <img width="165" height="360" alt="image" src="https://github.com/user-attachments/assets/14ca1429-482c-4b66-aa5d-6f779221c26e" />
   
